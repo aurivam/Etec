@@ -1,1 +1,51 @@
 
+public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double n1, n2, soma;
+
+            n1 = Convert.ToDouble(textBox1.Text);
+            n2 = Convert.ToDouble(textBox2.Text);
+            soma = n1 + n2;
+            MessageBox.Show(" A soma é : " + soma);
+        }
+
+        private void btn_subtração_Click(object sender, EventArgs e)
+        {
+            double n1, n2, sub;
+
+            n1 = Convert.ToDouble(textBox1.Text);
+            n2 = Convert.ToDouble(textBox2.Text);
+            sub = n1 - n2;
+            MessageBox.Show(" A subtração  é : " + sub);
+        }
+
+        private void btn_multi_Click(object sender, EventArgs e)
+        {
+            double n1, n2, multi;
+
+            n1 = Convert.ToDouble(textBox1.Text);
+            n2 = Convert.ToDouble(textBox2.Text);
+            multi = n1 * n2;
+            MessageBox.Show(" A Multiplicação   é : " + multi);
+        }
+
+        private void btn_div_Click(object sender, EventArgs e)
+        {
+            double n1, n2, div;
+            n1 = Convert.ToDouble(textBox1.Text);
+            n2 = Convert.ToDouble(textBox2.Text);
+            div= n1 / n2;
+            MessageBox.Show(" A Multiplicação   é : " + div);
+
+        }
+
+        private void btn_limpar_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+        }
